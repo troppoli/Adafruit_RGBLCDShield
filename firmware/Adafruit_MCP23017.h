@@ -13,7 +13,7 @@
 
 #ifndef _Adafruit_MCP23017_H_
 #define _Adafruit_MCP23017_H_
-
+#include "application.h"
 // Don't forget the Wire library
 class Adafruit_MCP23017 {
 public:

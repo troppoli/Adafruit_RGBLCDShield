@@ -15,7 +15,7 @@
 
 #ifndef Adafruit_RGBLCDShield_h
 #define Adafruit_RGBLCDShield_h
-
+#include "application.h"
 #include <inttypes.h>
 //#include "Print.h"
 #include "Adafruit_MCP23017.h"
