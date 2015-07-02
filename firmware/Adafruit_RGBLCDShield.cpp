@@ -15,22 +15,22 @@
 
 
 #include "Adafruit_RGBLCDShield.h"
-
+#include "application.h"
 #include <stdio.h>
 #include <string.h>
 #include <inttypes.h>
-#include <Wire.h>
-#ifdef __SAM3X8E__ // Arduino Due
- #define WIRE Wire1
-#else 
+//#include <Wire.h>
+//#ifdef __SAM3X8E__ // Arduino Due
+// #define WIRE Wire1
+//#else 
  #define WIRE Wire
-#endif
+//#endif
 
-#if ARDUINO >= 100
- #include "Arduino.h"
-#else
- #include "WProgram.h"
-#endif
+//#if ARDUINO >= 100
+//#include "Arduino.h"
+//#else
+// #include "WProgram.h"
+//#endif
 
 // When the display powers up, it is configured as follows:
 //

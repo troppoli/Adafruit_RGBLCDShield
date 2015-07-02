@@ -17,7 +17,7 @@
 #define Adafruit_RGBLCDShield_h
 
 #include <inttypes.h>
-#include "Print.h"
+//#include "Print.h"
 #include <Adafruit_MCP23017.h>
 
 // commands
@@ -96,11 +96,11 @@ public:
 
   void createChar(uint8_t, uint8_t[]);
   void setCursor(uint8_t, uint8_t); 
-#if ARDUINO >= 100
+//#if ARDUINO >= 100
   virtual size_t write(uint8_t);
-#else
-  virtual void write(uint8_t);
-#endif
+//#else
+//  virtual void write(uint8_t);
+//#endif
   void command(uint8_t);
   uint8_t readButtons();
 

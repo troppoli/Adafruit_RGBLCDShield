@@ -11,36 +11,29 @@
   BSD license, all text above must be included in any redistribution
  ****************************************************/
 
-#include <Wire.h>
-#include <avr/pgmspace.h>
+//#include <Wire.h>
+//#include <avr/pgmspace.h>
 #include "Adafruit_MCP23017.h"
-#ifdef __SAM3X8E__  // Arduino Due
- #define WIRE Wire1
-#else
- #define WIRE Wire
-#endif
-
-#if ARDUINO >= 100
- #include "Arduino.h"
-#else
- #include "WProgram.h"
-#endif
+//#ifdef __SAM3X8E__  // Arduino Due
+// #define WIRE Wire1
+//#else
+#define WIRE Wire
+//#endif
+//
+//#if ARDUINO >= 100
+// #include "Arduino.h"
+//#else
+// #include "WProgram.h"
+//#endif
+#include "application.h"
 
 // minihelper
 static inline void wiresend(uint8_t x) {
-#if ARDUINO >= 100
   WIRE.write((uint8_t)x);
-#else
-  WIRE.send(x);
-#endif
 }
 
 static inline uint8_t wirerecv(void) {
-#if ARDUINO >= 100
   return WIRE.read();
-#else
-  return WIRE.receive();
-#endif
 }
 
 ////////////////////////////////////////////////////////////////////////////////
