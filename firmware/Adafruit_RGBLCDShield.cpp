@@ -313,16 +313,16 @@ inline void Adafruit_RGBLCDShield::command(uint8_t value) {
   send(value, LOW);
 }
 
-#if ARDUINO >= 100
+//#if ARDUINO >= 100
 inline size_t Adafruit_RGBLCDShield::write(uint8_t value) {
   send(value, HIGH);
   return 1;
 }
-#else
-inline void Adafruit_RGBLCDShield::write(uint8_t value) {
-  send(value, HIGH);
-}
-#endif
+//#else
+//inline void Adafruit_RGBLCDShield::write(uint8_t value) {
+//  send(value, HIGH);
+//}
+//#endif
 
 /************ low level data pushing commands **********/
 
@@ -352,7 +352,7 @@ void  Adafruit_RGBLCDShield::_pinMode(uint8_t p, uint8_t d) {
     _i2c.pinMode(p, d);
   } else {
     // straightup IO
-    pinMode(p, d);
+    pinMode(p, (PinMode)d);
   }
 }
 
