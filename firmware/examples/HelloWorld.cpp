@@ -9,8 +9,8 @@ When a button is pressed, the backlight changes color.
 
 // include the library code:
 //#include <Wire.h>
-#include <Adafruit_RGBLCDShield/Adafruit_MCP23017.h>
-#include <Adafruit_RGBLCDShield/Adafruit_RGBLCDShield.h>
+#include "Adafruit_RGBLCDShield/Adafruit_MCP23017.h"
+#include "Adafruit_RGBLCDShield/Adafruit_RGBLCDShield.h"
 
 // The shield uses the I2C SCL and SDA pins. On classic Arduinos
 // this is Analog 4 and 5 so you can't use those for analogRead() anymore
