@@ -1,4 +1,10 @@
-This is a library for the Adafruit RGB 16x2 LCD Shield 
+#This is a library for the Adafruit RGB 16x2 LCD Shield#
+--------
+
+
+#####Ported to the [Particle](https://particle.io) ecosystem by Mumblepins, as requested on [this thread](https://community.particle.io/t/how-to-include-a-library-because-im-failing/12931?u=mumblepins).  I don't have the shield, so I'm relying on other people to report issues with it working.  As suggested [here by @anlek](https://community.particle.io/t/i2c-with-adafruit-lcd-display-for-pi/13876/16?u=mumblepins), pull-up resistors on the I2C lines may be necessary for use with the Core/Photon.
+---------
+
 
 Pick one up at the Adafruit shop!
   ---------> http://http://www.adafruit.com/products/714
